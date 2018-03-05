@@ -126,7 +126,7 @@ def compile_wallet():
 
     if is_compile:
         print_info("Downloading wallet...")
-        run_command("rm -rf /opt/DigitalPrice")
+        run_command("rm -rf /opt/Denarius")
         run_command("git clone https://github.com/carsenk/denarius /opt/Denarius")
         
         print_info("Compiling wallet...")
