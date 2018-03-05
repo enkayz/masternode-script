@@ -9,7 +9,7 @@ import os
 from urllib2 import urlopen
 
 SERVER_IP = urlopen('http://ip.42.pl/raw').read()
-BOOTSTRAP_URL = "http://digitalprice.org/dprice.zip"
+BOOTSTRAP_URL = "https://gitlab.com/denarius/chaindata/raw/master/chaindata.zip"
 
 DEFAULT_COLOR = "\x1b[0m"
 PRIVATE_KEYS = []
