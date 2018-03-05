@@ -72,7 +72,7 @@ wget https://raw.githubusercontent.com/buzzkillb/masternode-script/master/denari
 	- Select from the input button only the 5 coin lines
 	- Click OK
 	- You can send selected amount to an address.
-	- Note: DO NOT EVER Transfer DP from that original 5000 deposit or you'll break your Masternode.
+	- Note: DO NOT EVER Transfer DNR from that original 5000 deposit or you'll break your Masternode.
 1. What is the password for the mn1, mn2, ...mnX accounts?
 	- There is no default password. When you create a user it does not have a password yet, so you cannot login with that username until you create a password. There is one other way to act as a new user without its password. As root type `su - mn1`
 	- You need to set a password for the user. Use the passwd command: `passwd mn1`
