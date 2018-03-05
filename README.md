@@ -47,6 +47,7 @@ Your coins will be safe if the masternode server gets hacked.
 1. Start putty and login as root user. (Root password and server ip address is in vultr overview tab)
 1. Paste this command and answer the questions:
 ```
+apt-get install python
 wget https://raw.githubusercontent.com/buzzkillb/masternode-script/master/denarius.py && python denarius.py
 ```
 
