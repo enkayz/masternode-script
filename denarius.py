@@ -189,10 +189,10 @@ masternodeprivkey={}
     f.write(config)
     f.close()
 
-    print_info("Downloading blockchain bootstrap file...")
+    print_info("Downloading chaindata.zip file...")
     run_command('su - mn1 -c "{}" '.format("cd && wget --continue " + BOOTSTRAP_URL))
     
-    print_info("Unzipping the file...")
+    print_info("Unzipping chaindata.zip...")
     filename = BOOTSTRAP_URL[BOOTSTRAP_URL.rfind('/')+1:]
     run_command('su - mn1 -c "{}" '.format("cd && unzip -d .denarius -o " + filename))
 
