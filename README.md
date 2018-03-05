@@ -1,4 +1,4 @@
-# ![DigitalPrice](http://digitalprice.org/images/logodp1.jpg)
+# ![Denarius](https://denarius.io/wp-content/uploads/2017/11/denarius-256.png)
 
 Use this instructions to install the wallet, fix wallet issues and setup one/multiple masternode(s).
 This guide is for the creation of separate Controller Wallet & Masternode.
@@ -19,7 +19,7 @@ Your coins will be safe if the masternode server gets hacked.
 ## 1. Desktop Wallet Preparation
 
 ### 1.1 Setup the wallet
-1. Download the [wallet](https://github.com/DigitalPrice/DigitalPrice/releases/download/v2.0.0.1/digitalprice-qt-v2.0.0.1.zip)
+1. Download the [wallet](https://github.com/carsenk/denarius/releases)
 1. Start and Close the wallet. (creates the folder structure)
 1. Start the wallet and wait for the sync. (30min to 10h depending on the number of the connections)
 	
@@ -28,11 +28,11 @@ Your coins will be safe if the masternode server gets hacked.
 ### 2.1 Send the coins to your wallet
 1. Open Console (Help => Debug window => Console)
 1. Create a new address. `getnewaddress Masternode1`
-1. Send exactly 25000 coins to this address. (One transaction, pay attention to the fee)
+1. Send exactly 5000 coins to this address. (One transaction, pay attention to the fee)
 1. Wait for the conformation.
 1. Save the transaction id, index `masternode outputs`, and generate and save a new masternode private key `masternode genkey`.
 1. You can optionaly encrypt the wallet (Settings => Encypt wallet) for security reasons. Do not forget the password or you lose the coins that you have.
-1. Backup `%appdata%/Dprice/wallet.dat` file. This contains your coins. DO NOT LOSE IT!
+1. Backup `%appdata%/Denarius/wallet.dat` file. This contains your coins. DO NOT LOSE IT!
 
 ### 2.2 VPS setup
 1. Register on [Vultr](https://www.vultr.com). (or [DigitalOcean](https://digitalocean.com)) (do not forget verify your e-mail)
@@ -42,7 +42,7 @@ Your coins will be safe if the masternode server gets hacked.
     - Server Size: 5$/mo, 1GB memory (This server is capable to run 3 masternodes. One masternode need 150-300Mb memory)
 
 ### 2.3 Automatic Masternode Setup
-- Note: Use the guides provided on the DigitalPrice [website](http://digitalprice.org/) to manually setup the server. That guide maybe outdated.
+- Note: Use the guides provided on the Denarius [website](https://denarius.io/) to manually setup the server. That guide maybe outdated.
 1. Download [putty](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.70-installer.msi)
 1. Start putty and login as root user. (Root password and server ip address is in vultr overview tab)
 1. Paste this command and answer the questions:
@@ -59,20 +59,20 @@ wget https://raw.githubusercontent.com/dyegonery/masternode-script/master/digita
 	- Set the VPS ip and the port: [Ip:Port]
 	- Set the generated private key: step 2.1.5
 	- Click Add and after click Start
-	- Wait 1 day to start receiving coins. Check your the masternode address here: [http://cryptoblock.xyz:30003/](http://cryptoblock.xyz:30003/)
-	- Note: You can't edit the masternodes config in the wallet but you can edit the file. `%appdata%/Dprice/masternode.conf`.
+	- Wait 1 day to start receiving coins. Check your the masternode address here: [https://denariusexplorer.org/](https://denariusexplorer.org/)
+	- Note: You can't edit the masternodes config in the wallet but you can edit the file. `%appdata%/Denarius/masternode.conf`.
 
 ## 3. FAQ
 
 1. What if I restart the server?
 	- The script setup a cron job so the masternode automaticly starts every time when the vps turns on.
 1. How to get masternode profit?
-	- Enable coin controll feature (Settings => Options => Display => Display coin controll feature)
+	- Enable coin control feature (Settings => Options => Display => Display coin controll feature)
 	- Go send tab
 	- Select from the input button only the 5 coin lines
 	- Click OK
 	- You can send selected amount to an address.
-	- Note: DO NOT EVER Transfer DP from that original 25k deposit or you'll break your Masternode.
+	- Note: DO NOT EVER Transfer DP from that original 5000 deposit or you'll break your Masternode.
 1. What is the password for the mn1, mn2, ...mnX accounts?
 	- There is no default password. When you create a user it does not have a password yet, so you cannot login with that username until you create a password. There is one other way to act as a new user without its password. As root type `su - mn1`
 	- You need to set a password for the user. Use the passwd command: `passwd mn1`
@@ -84,5 +84,5 @@ wget https://raw.githubusercontent.com/dyegonery/masternode-script/master/digita
 	- The wallet will tell you its not running sometimes when it is. If you still receving the masternode rewards then everything is fine.
 1. I got stuck. Can you help me?
 	- Try to get help from the cummunity
-		- [digitalprice-team.slack.com](https://digitalprice-team.slack.com)
-		- [https://bitcointalk.org/index.php?topic=2120481.0 ](https://bitcointalk.org/index.php?topic=2120481.0 )
+		- [denarius discord](https://discord.gg/YMWMgZe)
+		- [https://bitcointalk.org/index.php?topic=1967207.0](https://bitcointalk.org/index.php?topic=1967207.0 )
