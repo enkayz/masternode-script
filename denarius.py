@@ -98,7 +98,6 @@ def secure_server():
     print_info("Securing server...")
     run_command("apt-get --assume-yes install ufw")
     run_command("ufw allow OpenSSH")
-    run_command("ufw allow ssh/tcp")
     run_command("ufw allow 33339")
     run_command("ufw allow 9999")
     run_command("ufw default deny incoming")
