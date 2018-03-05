@@ -22,6 +22,7 @@ Your coins will be safe if the masternode server gets hacked.
 1. Download the [wallet](https://github.com/carsenk/denarius/releases)
 1. Start and Close the wallet. (creates the folder structure)
 1. Start the wallet and wait for the sync. (30min to 10h depending on the number of the connections)
+1. Can download chaindata.zip to sync the QT faster. [chaindata import guide](https://denariustalk.org/index.php?/topic/157-sync-qt-wallet-windows-chaindatazip/)
 	
 ## 2. Masternode Setup
 
@@ -29,14 +30,14 @@ Your coins will be safe if the masternode server gets hacked.
 1. Open Console (Help => Debug window => Console)
 1. Create a new address. `getnewaddress Masternode1`
 1. Send exactly 5000 coins to this address. (One transaction, pay attention to the fee)
-1. Wait for the conformation.
+1. Wait for at least 15 confirmations.
 1. Save the transaction id, index `masternode outputs`, and generate and save a new masternode private key `masternode genkey`.
 1. You can optionaly encrypt the wallet (Settings => Encypt wallet) for security reasons. Do not forget the password or you lose the coins that you have.
 1. Backup `%appdata%/Denarius/wallet.dat` file. This contains your coins. DO NOT LOSE IT!
 
 ### 2.2 VPS setup
-1. Register on [Vultr](https://www.vultr.com). (or [DigitalOcean](https://digitalocean.com)) (do not forget verify your e-mail)
-1. Send some money (10$ is enough for two months) to your account to deploy a server. (1 server cost 5$/mo, you can pay with bitcoin)
+1. Register on [Vultr](https://www.vultr.com/?ref=7307426). (or [DigitalOcean](https://m.do.co/c/6dffa03c3628)) (do not forget verify your e-mail)
+1. Send some money (10$ is enough for two months) to your account to deploy a server. (1 server cost 5$/mo, some accept bitcoin)
 1. Deploy a new server.
     - Server Type: Ubuntu 16.04
     - Server Size: 5$/mo, 1GB memory (This server is capable to run 3 masternodes. One masternode need 150-300Mb memory)
