@@ -96,7 +96,7 @@ def print_welcome():
     print("        \::/____/                \::/    /                \:|   |          ")
     print("         ~~                       \/____/                  \|___|          ")
     print("")
-    print_info("Denarius masternode(s) installer v1.0")
+    print_info("Denarius masternode(s) installer v1.337")
     print("")
     print("")
     print("")
