@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from subprocess import Popen,PIPE,STDOUT
 import collections
 import os
