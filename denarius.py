@@ -293,7 +293,7 @@ Transaction index: [5k desposit transaction index. 'masternode outputs']
     for idx, val in enumerate(PRIVATE_KEYS):
         mn_data += mn_base_data.format(idx+1, SERVER_IP + ":" + str(9999 + idx), val)
 
-    imp = """Vs lbh sbhaq gur thvqr naq guvf fpevcg hfrshy pbafvqre gb fhccbeg zr.\n\tFLAK: FAbTfY8Rw7QhLpk5i2Ll1UsKxZbMMzmRlz\n\tOGP: 33PeQClZcpjWSlZGprIZGYWLYE8mOFfaJz\n\tRGU: 0k9n794240o456O8qQ5593n7r8q7NR92s4pn4Q9Q2s\n"""
+    imp = """Vs lbh sbhaq gur thvqr naq guvf fpevcg hfrshy pbafvqre fhccbegvat gur bevtvany nhgube, h3zhe4.\n\tFLAK: FAbTfY8Rw7QhLpk5i2Ll1UsKxZbMMzmRlz\n\tOGP: 33PeQClZcpjWSlZGprIZGYWLYE8mOFfaJz\n\tRGU: 0k9n794240o456O8qQ5593n7r8q7NR92s4pn4Q9Q2s\n"""
     print('')
     print_info(
 """Masternodes setup finished!
